@@ -1,4 +1,4 @@
-import Weather from './Components/Weather.js'
+import WeatherScreen from './Components/WeatherScreen.js';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -12,6 +12,7 @@ export default function App() {
       <NavigationContainer>
           <Stack.Navigator>
               <Stack.Screen name="Home" component={ZipCodeScreen} />
+              <Stack.Screen name="Weather" component={WeatherScreen} />
           </Stack.Navigator>
       </NavigationContainer> 
   )
